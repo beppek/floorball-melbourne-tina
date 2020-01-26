@@ -23,7 +23,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      {process.env.NODE_ENV != "production" && (
+      {process.env.NODE_ENV !== "production" && (
         <TinaButton primary onClick={() => setIsEditing(p => !p)}>
           {isEditing ? "Preview" : "Edit"}
         </TinaButton>
